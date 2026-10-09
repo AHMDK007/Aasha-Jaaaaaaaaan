@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Asra Fathima</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#170d1c;--bg2:#40183a;--fg:#f7e9ee;--mut:#cfa9b8;--gold:#ebcf98;--rose:#e58aa6;--card:rgba(255,255,255,.06);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg1:#fff3ee;--bg2:#f8d3df;--fg:#43202f;--mut:#8d5f70;--gold:#a06c1a;--rose:#cf4d74;--card:rgba(255,255,255,.55)}}
+:root[data-theme="light"]{--bg1:#fff3ee;--bg2:#f8d3df;--fg:#43202f;--mut:#8d5f70;--gold:#a06c1a;--rose:#cf4d74;--card:rgba(255,255,255,.55)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(120% 90% at 50% 0%,var(--bg2),var(--bg1) 72%) fixed;color:var(--fg);font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-size:1.2rem;overflow-x:hidden}
+canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#pg{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--rose),var(--gold));z-index:9;padding-top:env(safe-area-inset-top,0px)}
+.s{display:none;position:relative;z-index:1;min-height:100vh;padding:28px 22px;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px}
+.s.on{display:flex;animation:in 1.4s ease both}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.sc{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400;line-height:1.15;margin:0;font-size:clamp(2.8rem,13vw,5rem);background:linear-gradient(100deg,var(--gold) 20%,#fff7dc 45%,var(--rose) 60%,var(--gold) 80%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite}
+@keyframes sh{to{background-position:-250% 0}}
+.sm{letter-spacing:.38em;text-transform:uppercase;font-size:.76rem;color:var(--mut);margin:0}
+p.t{margin:0;color:var(--mut);font-style:italic;max-width:24em;line-height:1.6}
+.lov{font-size:1.45rem;color:var(--fg);font-style:italic;line-height:1.7;max-width:20em}
+.lov b{font-weight:500;color:var(--rose)}
+button{font:inherit;font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;padding:13px 34px;border-radius:999px;border:1px solid var(--gold);background:var(--card);color:var(--gold);cursor:pointer;backdrop-filter:blur(6px);transition:.3s}
+button:hover{background:var(--gold);color:var(--bg1)}
+.moon{width:96px;height:96px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff7dc,var(--gold));box-shadow:0 0 60px 10px rgba(235,207,152,.35);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 95px 24px rgba(235,207,152,.5)}}
+.candle{position:relative;width:34px;height:150px;margin-top:40px;cursor:pointer}
+.wax{position:absolute;bottom:0;left:0;right:0;height:110px;border-radius:6px;background:linear-gradient(90deg,#f8e6d8,#fff,#f0d2c4)}
+.plate{position:absolute;bottom:-10px;left:-46px;right:-46px;height:14px;border-radius:50%;background:var(--gold);opacity:.85}
+.wick{position:absolute;left:50%;bottom:110px;width:2px;height:12px;background:#3b2a2a;margin-left:-1px}
+.fl{position:absolute;left:50%;bottom:120px;width:20px;height:42px;margin-left:-10px;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:radial-gradient(ellipse at 50% 75%,#fff6c4,#ffb23e 55%,rgba(255,120,40,0) 75%);filter:drop-shadow(0 0 22px #ffb23e);transform-origin:50% 100%;animation:fk .3s ease-in-out infinite alternate;transition:opacity .6s}
+@keyframes fk{to{transform:scale(1.1,.93) rotate(2deg)}}
+.out .fl{opacity:0;animation:none}
+.smoke{position:absolute;left:50%;bottom:130px;width:4px;height:60px;margin-left:-2px;background:linear-gradient(transparent,var(--mut));opacity:0;filter:blur(3px)}
+.out .smoke{animation:sm 2.5s ease-out}
+@keyframes sm{20%{opacity:.7}to{opacity:0;transform:translateY(-50px)}}
+#L{width:100%;max-width:620px;margin:0 auto;padding:70px 24px 50px;position:relative;z-index:1;display:none;text-align:center}
+#L.on{display:block}
+#L p{margin:0 0 1.6em;line-height:1.8;font-size:1.28rem}
+#L p.lead{font-style:italic;color:var(--gold);font-size:1.5rem}
+#L p.end{color:var(--gold);font-size:1.42rem;font-style:italic}
+.ch{margin:2.6em 0 1.4em;display:flex;align-items:center;gap:14px;color:var(--gold)}
+.ch::before,.ch::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold));opacity:.6}
+.ch::after{transform:scaleX(-1)}
+.ch span{font-family:'Great Vibes','Brush Script MT',cursive;font-size:2rem;white-space:nowrap}
+.orn{color:var(--gold);letter-spacing:1em;margin:0 0 2em;opacity:.8}
+.r{opacity:0;transform:translateY(22px);transition:opacity 1.4s ease,transform 1.4s ease}
+.r.v{opacity:1;transform:none}
+</style></head><body>
+<div id="pg"></div>
+<canvas id="cv"></canvas>
+
+<section class="s on" id="s0">
+  <div class="moon"></div>
+  <p class="sm">12 : 00 a.m.</p>
+  <p class="t" style="font-size:1.3rem">The stars stayed awake tonight<br>just to celebrate you,<br>Asra Fathima.</p>
+  <p class="sm">by Maahin</p>
+  <button id="b0" style="margin-top:10px">Open</button>
+</section>
+
+<section class="s" id="s1">
+  <p class="sm">Make a wish</p>
+  <div class="candle" id="cd"><div class="smoke"></div><div class="fl"></div><div class="wick"></div><div class="wax"></div><div class="plate"></div></div>
+  <p class="t" style="margin-top:34px">Tap the flame to blow it out</p>
+</section>
+
+<section class="s" id="s2">
+  <p class="sm">Happy Birthday</p>
+  <h1 class="sc">Asra Fathima</h1>
+  <p class="lov">my baby, my love,<br><b>the most beautiful, the most precious,</b><br>the cutest wife in the whole universe</p>
+  <button id="b2" style="margin-top:14px">Read your letter</button>
+</section>
+
+<article id="L">
+  <p class="sm r" style="margin-bottom:10px">a letter for</p>
+  <h1 class="sc r" style="margin-bottom:14px">Asra Fathima</h1>
+  <div class="orn r">✦ ✦ ✦</div>
+
+  <p class="r lead">Happy Birthday to the most radiant, chaotic, beautiful, and irreplaceable woman in my entire universe.<br>Asra, my baby, my love.</p>
+
+  <p class="r">The clock has finally struck twelve, and while the rest of the world just flips a calendar page, my whole world stops to thank Allah for the day He created you. I'm sitting thousands of miles away, in the quiet of this room, wishing with every fiber of my being that I could reach through the glass, hold you close, pull those cheeks, mess up your hair, and whisper every word of this to your face. A single birthday text could never hold this much love, teasing, gratitude, and devotion, so tonight you are getting an entire book. Grab your pillow, settle into bed, Janu. Your husband is about to lay out every corner of his heart.</p>
+
+  <div class="ch r"><span>How we began</span></div>
+
+  <p class="r">Let's look back at the cinematic masterpiece of how we got here. If someone had told the younger, skeptical Asru that she'd be head over heels for this exact man, she would have rolled her eyes into another orbit. Never forget the legendary "Marriage? No thank you" era. Never forget how you tried to repel me in the early days, treating me like bad weather that needed an umbrella. You were on the phone with Suf, stressing, wondering whether you'd ever be able to just be yourself around me, or whether you'd spend a lifetime putting on a polite front and calculating every word.</p>
+
+  <p class="r">And look what happened! What unhinged enemies-to-lovers story did Allah write for us?! The girl who dodged the whole idea of marriage became an obsessed, paragraph-writing wife who accuses me of doing serious kaala jaadu on her, threatens that she's never giving me back, and wonders why on earth she loves me this much. Reading your confessions makes me smile so wide my cheeks hurt. You went from avoiding my messages to being my clingy, adorable, dramatic Tandoori ka Momo, counting the minutes until our next call.</p>
+
+  <p class="r">And don't think I forgot your little admission! You deliberately pretend you can't stay on call just to watch my face fall into "sad husband mode," then flip me back into the happiest man alive two seconds later. You thought you were being slick! You're mischievous, Asru, but the joke is on you. Seeing my gorgeous Apsara wrapped around my finger, loving me with that much fire, is the greatest victory of my life. You're stuck with me now. There is no return policy in this marriage.</p>
+
+  <div class="ch r"><span>Everything you are</span></div>
+
+  <p class="r">I adore every wild, dramatic, contradictory layer of you. My little Hobbit, who sleeps twelve hours without a shred of guilt, wakes up half asleep, and seriously considers a nap to recover from all that sleeping. You rival Kumbhakaran under a blanket, and you still look adorable. My sweetest Gulab Jamun, whose presence melts away whatever bitterness the day threw at me. My majestic Bald Eagle, who swoops in with banter, out-of-pocket questions, and sudden bursts of energy right when my brain is fried from high-voltage circuits, research papers, and equations. My Binse, whose laugh over the speaker makes this cold room feel alive.</p>
+
+  <p class="r">A quiet, prim, predictable life would have bored me to tears. I don't want a perfectly polite, robotic partner. I want you: the girl who brings her daily quota of kalesh into my life to keep things entertaining, who gets stubbornly defensive over the most random topics, and who turns around five minutes later with the softest voice asking if I'm okay. Your chaos is my favorite kind of poetry. Your moods, your sudden clinginess, your demands for attention, your silly theories about life, I wouldn't trade a second of your madness for the quietest paradise on earth.</p>
+
+  <div class="ch r"><span>My sanctuary</span></div>
+
+  <p class="r">Beneath all the laughter and teasing, I need you to know what you do for my soul. Living out here alone, thousands of miles from home, with no family around, is hard in ways that are almost impossible to explain. The days are long, the air is cold, daily interactions drain my patience, and the pressure to build our future and finish my degrees weighs on my shoulders every morning. Some days my spirit feels completely depleted, the silence in my room feels deafening, and the world outside feels indifferent.</p>
+
+  <p class="r">In the middle of all that, you are my sanctuary. The second your name lights up my phone, the noise in my head goes quiet. When we stay on call and neither of us says a word, you doing your things and me doing mine, that silence isn't empty. It is full of peace. You are my home, Asra. For a man alone in a foreign country, his wife's presence is the tether that keeps him anchored to sanity, warmth, and hope. Every sacrifice, every late night, every hurdle is fueled by one vision: the day I close this distance, bring you home, and never have to look at you through a glass screen again.</p>
+
+  <div class="ch r"><span>What I see in you</span></div>
+
+  <p class="r">I also see the tender heart you guard so fiercely behind your sharp wit. I see how deeply you love your family, how Abu's pain cuts right through you, and how much you want the people around you to feel loved. Your empathy is sometimes so overwhelming that you carry burdens, guilt, and sadness that were never yours. You overthink, you doubt your worth, you wonder whether you're good enough or doing things right.</p>
+
+  <p class="r">Whenever those doubts creep in, remember how you look through my eyes. You are not lacking, you are not failing, and you never need to apologize for being human. You are a woman of immense grace, pure intentions, and boundless loyalty. You never have to perform perfection for me, Janu, or have every answer, or pretend you have life figured out. My love is not a reward for being flawless. It is a permanent shelter for everything you are: tears, flaws, stubbornness, and all.</p>
+
+  <div class="ch r"><span>My promise</span></div>
+
+  <p class="r">On this birthday, I make a solemn promise to you before Allah. I promise to keep working with every ounce of strength I have until this distance is a memory we laugh about on our own couch. I promise to build a home where your heart always feels safe, valued, and defended against every harsh breeze. I promise to be the man who listens to your late-night rambles, cooks your favorite food when you're exhausted, lets you sleep as much as you want without judging you, wipes every tear before it can drop, and reminds you every morning how blessed I am that Allah wrote your name next to mine. You are my partner for this Dunya, and I am not letting you go in the Akhirah either.</p>
+
+  <div class="ch r"><span>My duas for you</span></div>
+
+  <p class="r">Tonight my heart is overflowing with prayers for you, for me, and for the life written ahead of us. May Allah Ta'ala shower this new year of your life with abundant afiyah, radiant health, deep peace of mind, and unshakeable joy. May He lift every heavy thought from your chest, replace every trace of anxiety with calm, fulfill every silent dua living in the corners of your heart, and protect Abu and your family with His boundless mercy.</p>
+
+  <p class="r">May Allah safeguard our marriage from every evil eye, every whispered insecurity, and every trial that could ever try to pull our hearts apart. May He make our love grow stronger every single day, so deeply rooted that no distance, no outside noise, and no storm of this Dunya can shake it, and may it only grow softer and more devoted with every sunrise.</p>
+
+  <p class="r">I pray with all my heart for our future. May Allah bless the home we will build, filling every room with warmth, laughter, barakah, and sakina. May He grant us righteous, healthy, beautiful children who inherit your tender heart, your radiant smile, and maybe a little of your dramatic spark, and make them a coolness for our eyes and a continuous source of joy. May He make us the best parents, gentle and patient, and may our family bring light wherever we go.</p>
+
+  <p class="r">May Allah unite us under one roof very soon, so that blurry screens and countdowns disappear forever. May He make our companionship a lifelong mercy in this world, and reunite us hand in hand in the highest gardens of Jannat ul-Firdaus.</p>
+
+  <div class="orn r" style="margin-top:2.4em">✦ ✦ ✦</div>
+
+  <p class="r end">Happy Birthday, my sweet Gulab Jamun, my little Hobbit, my chaotic Bald Eagle, my dramatic Tandoori ka Momo, my forever Apsara. You are the whole package, the jackpot of my life, and the greatest gift I could ever ask for. Now turn off that overthinking brain, smile that gorgeous smile, and know with absolute certainty that your husband is completely, helplessly, and unconditionally in love with you.</p>
+
+  <p class="r end" style="font-size:1.65rem;overflow-wrap:anywhere">I love you. Bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut, bohut zyada, meri jaaaaaaaaaaaaaaaaaaan, my baby, my love, my sweetheart, today, tomorrow, and for all eternity. 🤍</p>
+
+  <p class="sm r" style="margin-top:34px">forever yours</p>
+  <h2 class="sc r" style="font-size:3.2rem">Maahin</h2>
+  <p class="r" style="margin-top:40px"><button id="re">Watch again</button></p>
+</article>
+
+<script>
+const $=id=>document.getElementById(id);
+function show(n){document.querySelectorAll('.s').forEach(e=>e.classList.remove('on'));$('L').classList.remove('on');if(n<3)$('s'+n).classList.add('on');else $('L').classList.add('on');window.scrollTo(0,0);prog();fwOn=(n==0||n==2);if(n==2)for(let i=0;i<4;i++)setTimeout(launch,i*350)}
+let io;
+function reveal(){
+  const els=document.querySelectorAll('#L .r');els.forEach(e=>e.classList.remove('v'));
+  if(!('IntersectionObserver'in window)){els.forEach(e=>e.classList.add('v'));return}
+  if(io)io.disconnect();
+  io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}}),{threshold:.12});
+  els.forEach(e=>io.observe(e));
+}
+function prog(){const h=document.documentElement.scrollHeight-innerHeight;$('pg').style.width=($('L').classList.contains('on')&&h>0?scrollY/h*100:0)+'%'}
+addEventListener('scroll',prog);
+$('b0').onclick=()=>{show(1);burst(25)};
+$('cd').onclick=()=>{$('cd').classList.add('out');burst(130);setTimeout(()=>show(2),2200)};
+$('b2').onclick=()=>{show(3);reveal();burst(40)};
+$('re').onclick=()=>{$('cd').classList.remove('out');show(0)};
+
+const cv=$('cv'),cx=cv.getContext('2d');let W,H,D=Math.min(devicePixelRatio||1,2),stars=[],pet=[];
+const pc=['#e58aa6','#f3b6c8','#ebcf98','#d96b8f'];
+function rs(){W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;stars=Array.from({length:100},()=>({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.3,p:Math.random()*6}))}
+addEventListener('resize',rs);rs();
+function mk(b){return{x:b?W/2:Math.random()*W,y:b?H*.45:-20,vx:(Math.random()-.5)*(b?9:.8),vy:b?-Math.random()*8-2:Math.random()*.8+.4,s:Math.random()*7+5,r:Math.random()*6,vr:(Math.random()-.5)*.05,c:pc[Math.random()*4|0],b:b,w:Math.random()*6,h:Math.random()<.35}}
+for(let i=0;i<26;i++){const p=mk(false);p.y=Math.random()*H;pet.push(p)}
+function burst(n){for(let i=0;i<n;i++)pet.push(mk(true))}
+function heart(s){cx.beginPath();cx.moveTo(0,s*.35);cx.bezierCurveTo(-s,-s*.3,-s*.4,-s,0,-s*.4);cx.bezierCurveTo(s*.4,-s,s,-s*.3,0,s*.35);cx.fill()}
+let fw=[],sp=[],fwOn=true,fwT=0;
+const fc=['#ff6b8b','#ffd36e','#8be9fd','#c792ff','#7dffb2','#ffffff'];
+function launch(x){fw.push({x:x||W*(.15+Math.random()*.7),y:H,ty:H*(.15+Math.random()*.3),vy:-(9+Math.random()*3),c:fc[Math.random()*6|0]})}
+function pop(x,y,c){const n=55;for(let i=0;i<n;i++){const a=i/n*6.283,v=2+Math.random()*3.5;sp.push({x:x,y:y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:70+Math.random()*30,c:Math.random()<.3?'#ffffff':c})}}
+function fwStep(){
+  if(fwOn&&--fwT<=0){launch();fwT=45+Math.random()*40}
+  fw=fw.filter(r=>{r.y+=r.vy;r.vy*=.985;cx.globalAlpha=1;cx.fillStyle=r.c;cx.fillRect(r.x-1.5,r.y,3,10);if(r.y<=r.ty||r.vy>-2){pop(r.x,r.y,r.c);return false}return true});
+  sp=sp.filter(p=>{p.x+=p.vx;p.y+=p.vy;p.vy+=.05;p.vx*=.98;p.vy*=.98;p.l--;cx.globalAlpha=Math.max(0,p.l/80);cx.fillStyle=p.c;cx.beginPath();cx.arc(p.x,p.y,2,0,6.3);cx.fill();return p.l>0});
+  cx.globalAlpha=1;
+}
+setTimeout(()=>{launch(W*.3);launch(W*.7)},400);
+let t=0;
+function frame(){
+  t+=.02;cx.setTransform(D,0,0,D,0,0);cx.clearRect(0,0,W,H);
+  const th=document.documentElement.dataset.theme,light=th==='light'||(th!=='dark'&&matchMedia('(prefers-color-scheme: light)').matches);
+  cx.fillStyle=light?'#cf8aa2':'#fff3d6';
+  stars.forEach(s=>{cx.globalAlpha=(.25+.45*Math.sin(t+s.p))*(light?.5:1);cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.3);cx.fill()});
+  pet=pet.filter(p=>p.y<H+30);
+  pet.forEach(p=>{p.x+=p.vx+Math.sin(t+p.w)*.5;p.y+=p.vy;p.r+=p.vr;if(p.b){p.vy+=.12;p.vx*=.985}
+    cx.save();cx.translate(p.x,p.y);cx.rotate(p.h?Math.sin(t+p.w)*.4:p.r);cx.globalAlpha=.8;cx.fillStyle=p.c;
+    if(p.h)heart(p.s*.9);else{cx.beginPath();cx.ellipse(0,0,p.s,p.s*.55,0,0,6.3);cx.fill()}cx.restore()});
+  pet.forEach(p=>{if(!p.b&&p.y>H+20){p.y=-20;p.x=Math.random()*W}});
+  fwStep();
+  requestAnimationFrame(frame);
+}
+frame();
+</script>
+</body></html>
